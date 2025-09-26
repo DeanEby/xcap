@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clickbait filtering options</title>
+  </head>
+  <body>
+    <div>
+      <label>
+       <input type="checkbox" id="negativity_filtering" />
+        Negativity Filtering
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" id="ellipses_removal" />
+        ... Removal
+    </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" id="exclam_removal" />
+        ! Removal
+    </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" id="lowercasing" />
+        Lowercasing
+      </label>
+    </div>
+    <div>
+      <label for="blocked_words">
+        Blocked Words (separate, by, comma)
+      </label><br>
+      <textarea id="blocked_words" rows="4" cols="40" placeholder="Enter words to block, one per line"></textarea>
+      <label>
+        <input type="checkbox" id="blocklist" />
+        Blocklist
+      </label>
+    </div>
+    
+    <div>
+      <label>
+        Lockdown Mode (Block all recommendations)
+        <input type="checkbox" id="lockdown_mode">
+      </label>
+    </div>
+
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>

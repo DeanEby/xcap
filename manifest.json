@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "xcap",
+  "version": "0.0.1",
+  "description": "Passively record the content you view on x",
+  "content_scripts": [
+    {
+      "js": 
+      [
+        "scripts/content.js"
+      ],
+      "matches": ["*://*.x.com/*"],
+      "run_at" : "document_start"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  // "options_page": "options.html"
+}
